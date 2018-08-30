@@ -11,14 +11,13 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             int i;
-            Random random = new Random();
-            int myi = random.Next(1, 1000);
+           
 
             Console.WriteLine("Please enter an integer between 1 and 1000");
 
             i = int.Parse(Console.ReadLine());
 
-            if (i % 2 <= 1000)
+            if (i % 2 == 0)
             {
                 Console.WriteLine("The number is even");
             }
